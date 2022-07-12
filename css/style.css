@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.row{
+	width: 100%;
+}
+section{
+	position: relative;
+	margin: 10px;
+}
+
+section, section > h2 {
+	border: 1px solid black;
+}
+
+/*desktop devices*/
+/*992px and above*/
+
+@media (min-width: 992px) {
+
+	.col-lg-4{
+		width: 33.33%;
+		float:  left;
+	}
+}
+
+/*Tablet devices*/
+/*between 768px and 991px*/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12{
+		float: left;
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+}
+
+/*desktop devices*/
+/*992px and above*/
+@media (max-width: 767px) {
+
+	.col-sm-12{
+		width: 100%;
+		float:  left;
+	}
+}
+
+section > h2{
+	position: absolute;
+	margin:  0px;
+	top:  0;
+	right: 0;
+
+
+	width: 200px;
+	text-align: center;
+	color:  white;
+}
+
+section > p{
+	margin: 0px;
+	padding: 50px 20px 20px 20px;
+}
+
+.section1 {
+	background-color: blueviolet;
+}
+.section2 {
+	background-color: indianred;
+}
+.section3 {
+	background-color: lightseagreen;
+}
+
+.section1 > h2{
+	background-color: hotpink;	
+}
+.section2 > h2{
+	background-color: maroon;
+}
+.section3 > h2{
+	background-color: salmon;
+}
+
+
